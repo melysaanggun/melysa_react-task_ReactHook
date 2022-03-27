@@ -20,17 +20,10 @@ const data = [
   
   const [todo,setTodo] = useState(data) 
 
-  console.log("todo", todo)
-
   const simpan = (value) => {
-    // value.preventDefault()
-
     const baru = [...todo, 
       {id: (new Date()).getTime(), title: value, completed: false, }]
-
-      console.log("baru", baru)
     setTodo({todo: baru})
-    console.log("Function Simpan")
   }
 
   const selesai = (id, checked) => {
