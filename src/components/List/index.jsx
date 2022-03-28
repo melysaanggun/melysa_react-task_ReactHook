@@ -16,11 +16,10 @@ const List = (props) => {
 
     return ( 
         <div className="todolist-list">
-            {console.log (props.list)}
-            {props.list.map(todo => {
+            {props.list.map((todo) => {
                 return <ul key={todo.id} style={{textDecoration: todo.completed ? 'line-through'  : 'none', 
                 fontStyle: todo.completed ? 'italic' : 'normal' }}>
-                        
+                    
                     <input 
                     type="checkbox" 
                     checked={todo.completed} 

@@ -13,7 +13,6 @@ import "./style.css"
     const onClick = () => {
         props.simpan(val.value)
         setVal({value: ''})
-        console.log("On Click di dalam Add Todo")
     }
 
         return (
