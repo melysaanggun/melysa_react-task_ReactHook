@@ -1,7 +1,7 @@
 import './style.css'
 
 const List = (props) => {
-
+    
     const onChange = (id) => {
         return (e) => {
             props.onChecked(id, e.target.checked)
@@ -14,7 +14,11 @@ const List = (props) => {
         }
     }
 
+    
+
     return ( 
+        
+
         <div className="todolist-list">
             {props.list.map((todo) => {
                 return <ul key={todo.id} style={{textDecoration: todo.completed ? 'line-through'  : 'none', 
